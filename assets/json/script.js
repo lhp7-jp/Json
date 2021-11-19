@@ -1,6 +1,6 @@
 const header = document.querySelector('header');
 const section = document.querySelector('section');
-let requestURL = './assets/json/movies.json';
+let requestURL = 'assets/json/movies.json';
 
 fetch(requestURL)
     .then(response => response.json())
@@ -11,12 +11,11 @@ fetch(requestURL)
             let myId = (element.id);
             let myPoster_Path = (element.myPoster_Path);
             let myVote_average = (element.vote_average);
+            console.log(myOriginal_title);
+            console.log(myId);
+            console.log(myPoster_Path);
+            console.log(myVote_average);
         });
-        console.log(myOriginal_title);
-        console.log(myId);
-        console.log(myPoster_Path);
-        console.log(myVote_average);
-
     });
 
 
